@@ -24,9 +24,7 @@
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="krc-lH-PLv"/>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhR-kv-mqy"/>
-                                    <segue destination="UXx-6l-Vgx" kind="presentation" identifier="loginSegue" destinationCreationSelector="loginS:" id="nIe-yX-l7C"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTm-TP-gHP"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fa8-Lw-kXx">
@@ -69,6 +67,7 @@
                         <outlet property="button" destination="7fh-3j-EXW" id="aF9-yR-euL"/>
                         <outlet property="login" destination="fa8-Lw-kXx" id="zOp-F9-lvU"/>
                         <outlet property="password" destination="Q1c-15-he6" id="m6F-tT-Ioe"/>
+                        <segue destination="UXx-6l-Vgx" kind="presentation" identifier="loginSegue" id="4c2-eB-zj0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,8 +93,8 @@
         <!--Item-->
         <scene sceneID="Ali-KD-AzI">
             <objects>
-                <viewController id="5c7-u6-ofh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LZZ-2g-tfw" customClass="dota">
+                <viewController id="5c7-u6-ofh" customClass="MainViewController" customModule="Homework2_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LZZ-2g-tfw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -116,6 +115,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="0Pv-9p-Shm"/>
                     <navigationItem key="navigationItem" id="Sff-i2-SPg"/>
+                    <connections>
+                        <outlet property="greetingLabel" destination="7Ia-jS-pQq" id="msW-jl-Iy2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BI8-p9-F4l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
