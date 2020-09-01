@@ -26,7 +26,7 @@
                                 <connections>
                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="krc-lH-PLv"/>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhR-kv-mqy"/>
-                                    <segue destination="UXx-6l-Vgx" kind="presentation" identifier="loginSegue" id="nIe-yX-l7C"/>
+                                    <segue destination="UXx-6l-Vgx" kind="presentation" identifier="loginSegue" destinationCreationSelector="loginS:" id="nIe-yX-l7C"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fa8-Lw-kXx">
@@ -95,10 +95,23 @@
         <scene sceneID="Ali-KD-AzI">
             <objects>
                 <viewController id="5c7-u6-ofh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LZZ-2g-tfw">
+                    <view key="view" contentMode="scaleToFill" id="LZZ-2g-tfw" customClass="dota">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ia-jS-pQq">
+                                <rect key="frame" x="94" y="264" width="133" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7Ia-jS-pQq" firstAttribute="centerY" secondItem="LZZ-2g-tfw" secondAttribute="centerY" id="4bh-1o-zYA"/>
+                            <constraint firstItem="7Ia-jS-pQq" firstAttribute="leading" secondItem="sK6-4U-psQ" secondAttribute="leading" constant="94" id="Anh-5g-RoR"/>
+                            <constraint firstItem="sK6-4U-psQ" firstAttribute="trailing" secondItem="7Ia-jS-pQq" secondAttribute="trailing" constant="93" id="z9D-tI-ZJT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sK6-4U-psQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="0Pv-9p-Shm"/>
@@ -114,6 +127,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UXx-6l-Vgx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ECq-Bj-YZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
