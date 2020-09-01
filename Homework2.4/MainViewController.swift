@@ -11,6 +11,7 @@ import UIKit
 class MainViewController: UIViewController {
     @IBOutlet weak var greetingLabel: UILabel!
     
+     var user: User!
 
 
 }

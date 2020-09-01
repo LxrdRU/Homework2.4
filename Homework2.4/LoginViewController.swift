@@ -19,19 +19,18 @@ class LoginViewController: UIViewController {
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tabBarController = segue.destination as! UITabBarController
-        let welcomeVC = tabBarController.viewControllers?.first as! MainViewController
-        let navigationVC = tabBarController.viewControllers?.last as! UINavigationController
+        let mainVC = tabBarController.viewControllers?.first as! MainViewController
         mainVC.user = user
     }
-    @IBAction func buttonPressed(_ sender: Any) {
-        guard
-            login.text == user.name,
-            password.text == user.password
-        else {
-            showAlert(title: "Invalid login or password",
-                      message: "Please, enter correct login and password",
-                      textField: login)
-            return
+    @IBAction func buttonPressed() {
+      guard
+                login.text == user.name,
+                password.text == user.password
+            else {
+                showAlert(title: "Invalid login or password",
+                message: "Please, enter correct login and password",
+                textField: login)
+                return
         }
         
         performSegue(withIdentifier: "logIn", sender: nil)
@@ -58,11 +57,11 @@ extension LoginViewController: UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == userNameTextField {
+        if textField == login {
             textField.resignFirstResponder()
-            passwordTextField.becomeFirstResponder()
+            password.becomeFirstResponder()
         } else {
-            logInPressed()
+            buttonPressed()
         }
         return true
     }
