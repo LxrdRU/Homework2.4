@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7502D3CA24FE7FCB009DF2B7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7502D3C924FE7FCB009DF2B7 /* MainViewController.swift */; };
 		7502D3CC24FEB47E009DF2B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7502D3CB24FEB47E009DF2B7 /* User.swift */; };
+		7502D3CE24FFA896009DF2B7 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7502D3CD24FFA896009DF2B7 /* AboutMeViewController.swift */; };
 		75C09F7624FD11BD00FD4A19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C09F7524FD11BD00FD4A19 /* AppDelegate.swift */; };
 		75C09F7824FD11BD00FD4A19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C09F7724FD11BD00FD4A19 /* SceneDelegate.swift */; };
 		75C09F7A24FD11BD00FD4A19 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C09F7924FD11BD00FD4A19 /* LoginViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		7502D3C924FE7FCB009DF2B7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7502D3CB24FEB47E009DF2B7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7502D3CD24FFA896009DF2B7 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		75C09F7224FD11BC00FD4A19 /* Homework2.4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework2.4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C09F7524FD11BD00FD4A19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75C09F7724FD11BD00FD4A19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				75C09F7724FD11BD00FD4A19 /* SceneDelegate.swift */,
 				75C09F7924FD11BD00FD4A19 /* LoginViewController.swift */,
 				75C09F7B24FD11BD00FD4A19 /* Main.storyboard */,
+				7502D3CD24FFA896009DF2B7 /* AboutMeViewController.swift */,
 				7502D3C924FE7FCB009DF2B7 /* MainViewController.swift */,
 				75C09F7E24FD11C000FD4A19 /* Assets.xcassets */,
 				75C09F8024FD11C000FD4A19 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				75C09F7624FD11BD00FD4A19 /* AppDelegate.swift in Sources */,
 				75C09F7824FD11BD00FD4A19 /* SceneDelegate.swift in Sources */,
 				7502D3CC24FEB47E009DF2B7 /* User.swift in Sources */,
+				7502D3CE24FFA896009DF2B7 /* AboutMeViewController.swift in Sources */,
 				7502D3CA24FE7FCB009DF2B7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

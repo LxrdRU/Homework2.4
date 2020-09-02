@@ -19,22 +19,26 @@ class LoginViewController: UIViewController {
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tabBarController = segue.destination as! UITabBarController
-        let mainVC = tabBarController.viewControllers?.first as! MainViewController
-        mainVC.user = user
+        let welcomeVC = tabBarController.viewControllers?.first as! MainViewController
+        let navigationVC = tabBarController.viewControllers?.last as! UINavigationController
+        let aboutUserVC = navigationVC.topViewController as! AboutMeViewController
+        welcomeVC.user = user
+        aboutUserVC.user = user
     }
     @IBAction func buttonPressed() {
-      guard
-                login.text == user.name,
-                password.text == user.password
-            else {
-                showAlert(title: "Invalid login or password",
-                message: "Please, enter correct login and password",
-                textField: login)
-                return
-        }
-        
-        performSegue(withIdentifier: "logIn", sender: nil)
+        guard
+                       login.text == user.name,
+                       password.text == user.password
+                   else {
+                       showAlert(title: "Invalid login or password",
+                       message: "Please, enter correct login and password",
+                       textField: login)
+                       return
+               }
+               
+               performSegue(withIdentifier: "loginSegue", sender: nil)
     }
+    
 }
 // MARK: - Alert Controller
 extension LoginViewController {
