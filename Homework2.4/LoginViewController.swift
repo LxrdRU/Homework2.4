@@ -38,7 +38,13 @@ class LoginViewController: UIViewController {
                
                performSegue(withIdentifier: "loginSegue", sender: nil)
     }
+    @IBAction func forgotLogin(_ sender: Any) {
+        showAlert(title: "Forgot login?", message: "Your login is \(user.name)")
+    }
     
+    @IBAction func forgotPassword(_ sender: Any) {
+         showAlert(title: "Forgot password?", message: "Your password is \(user.password)")
+    }
 }
 // MARK: - Alert Controller
 extension LoginViewController {
